@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="BotijoMarket">
+  <head>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+      <link type="text/css" rel="stylesheet" href="css/main.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="navbar-fixed">
+        <nav ng-controller="NavController as navCtrl">
+            <div class="nav-wrapper">
+                <ul class="left">
+                    <li ng-class="{active: $route.current.activeNav == 1}"><a href="/#/">Home</a></li>
+                    <li ng-class="{active: $route.current.activeNav == 2}"><a href="/#productos">Productos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="container" ng-view></section>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="libs/angular.js"></script>
+    <script type="text/javascript" src="libs/angular-route.js"></script>
+    <script type="text/javascript" src="libs/jquery.js"></script>
+    <script type="text/javascript" src="libs/materialize.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/controllers.js"></script>
+    <script type="text/javascript" src="scripts/directive.js"></script>
+    <script type="text/javascript" src="scripts/services.js"></script>
+    <script type="text/javascript" src="scripts/filters.js"></script>    
+  </body>
+</html>
